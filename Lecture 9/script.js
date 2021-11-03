@@ -44,8 +44,8 @@ function Calc()
     let b;
 
     this.read = function() {
-        this.a = Number(prompt(a, 0));
-        this.b = Number(prompt(b, 0));
+        this.a = Number(prompt("a", 0));
+        this.b = Number(prompt("b", 0));
     }
 
     this.sum = function() {
@@ -62,5 +62,24 @@ let calc = new Calc();
 calc.read();
 
 console.log("SUM of " + calc.a + " and " + calc.b + " = " + calc.sum());
-
 console.log("MUL of " + calc.a + " and " + calc.b + " = " + calc.mul());
+
+console.log("=====");
+
+//3
+
+function MyNumber(startingValue){
+    this.value = startingValue;
+
+    this.read = function() {
+        this.value += Number(prompt("Add Value", 0));
+    }
+}
+
+let number = new MyNumber(18);
+
+console.log("Starting Value = " + number.value);
+
+number.read();
+
+console.log("New Vaue = " + number.value);
