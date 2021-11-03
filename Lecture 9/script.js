@@ -40,9 +40,6 @@ console.log("=====");
 
 function Calc()
 {
-    let a;
-    let b;
-
     this.read = function() {
         this.a = Number(prompt("a", 0));
         this.b = Number(prompt("b", 0));
