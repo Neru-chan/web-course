@@ -7,4 +7,4 @@ function User (name)
 let user = new User("Вася");
 
 console.log(user.name);
-console.log(isAdmin);
+console.log(user.isAdmin);
